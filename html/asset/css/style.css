@@ -1,0 +1,364 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.drd{
+    cursor: pointer;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.mt-12 {
+    margin-top: 12px !important;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.card {
+    transition: all 0.2s linear;
+}
+
+.slick-prev {
+    display: none !important;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+.w-60{
+    width: 60% !important;
+}
+/* navtop */
+
+.navtop span {
+    font-size: 14px;
+}
+
+.navtop select {
+    font-size: 14px;
+    background-color: #d1e7dd;
+    border: none;
+    outline: none;
+}
+
+/* search bar */
+
+#searchQueryInput {
+    width: 100%;
+    outline: none;
+    padding: 0px 40px 0 20px;
+}
+
+#searchQuerySubmit {
+    right: 1px;
+    bottom: 24%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
+header .bi-heart::after {
+    content: "5";
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    font-size: 8px;
+    background-color: #0aad0a;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+header .bi-bag::after {
+    content: "2";
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    font-size: 8px;
+    background-color: #0aad0a;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+header .nav-link:hover{
+    color:#0aad0a !important;
+}
+
+/* Drop down */
+
+#drp-down li:hover {
+    background-color: #d1e7dd;
+}
+.pages-drp {
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0.5px #d1e7dd;
+    position: absolute;
+    top: 150px;
+    left: 585px;
+    z-index: 99;
+    display: none;
+}
+.location-drp {
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0.5px #d1e7dd;
+    position: absolute;
+    top: 100px;
+    right: 257px;
+    z-index: 99;
+    display: none;
+}
+
+/* Main Banner */
+
+/* Swiper */
+
+swiper-container {
+    height: 545px;
+    --swiper-theme-color : #0aad0a;
+}
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper1 {
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper2 {
+    background-image: url(../images/slider-2.jpg    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content {
+    padding: 120px 60px;
+}
+
+.slider-content .dsc {
+    font-size: 10px;
+    background-color: #FFC107;
+}
+
+.slider-content p {
+    font-size: 18px;
+}
+
+.offer-text{
+    font-size: 10px;
+    top: 15px;
+    left: 15px;
+}
+
+/* Sub Product */
+
+.sub-product {
+    margin: 80px 0 48px;
+}
+
+.sub-product .card {
+    padding: 16px;
+    margin: 0px 8px;
+}
+
+.sub-product .card:hover {
+    border: 1px solid #0aad0a;
+    box-shadow: 0px 0px 2px 0.5px #d1e7dd;
+}
+
+/* sub banner */
+
+.sub-bg1 {
+    background-image: url(../images/grocery-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 32px;
+}
+
+.sub-bg2 {
+    background-image: url(../images/grocery-banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 32px;
+}
+
+/* Product */
+
+.product {
+    margin: 80px 0;
+}
+
+.product .card {
+    margin: 0px 8px;
+}
+
+.rating {
+    font-size: 12px;
+}
+
+.rating i {
+    color: #FFC107;
+}
+
+.product .price {
+    font-size: 14px;
+}
+
+.product .card:hover {
+    border: 1px solid #0aad0a;
+    box-shadow: 0px 0px 2px 0.5px #d1e7dd;
+}
+
+.card:hover .card-hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.card-hover{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+}
+
+.card-hover button {
+    box-shadow: 0 2px 4px -1px rgba(145,158,171,.2), 0 4px 5px 0 rgba(145,158,171,.14), 0 1px 10px 0 rgba(145,158,171,.12);
+    transition: all 0.3s linear;
+}
+.card-hover button:hover i{
+    color: #fff !important;
+}
+
+
+/* quantity counter */
+
+.counter {
+    width: 150px;
+}
+.counter input {
+    width: 20px;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* offer start */
+
+.coffee-bg {
+    background-image: url(../images/banner-deal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 423px;
+}
+
+.offer .card {
+    margin: 0 8px;
+}
+
+.offer .rating {
+    font-size: 12px;
+}
+
+.offer .card-hover {
+    top: 38% !important;
+}
+
+.offer i {
+    color: #FFC107;
+}
+
+.offer .price {
+    font-size: 14px;
+}
+
+#countdown {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+#countdown li {
+    font-size: 13px;
+}
+
+.offer .card:hover {
+    border: 1px solid #0aad0a;
+    box-shadow: 0px 0px 2px 0.5px #d1e7dd;
+}
+
+/* services */
+
+.services {
+    margin: 80px 0;
+}
+
+.services h3 {
+    font-size: 17px;
+}
+
+.services p {
+    font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f0f3f2;
+    padding: 80px 0;
+    font-size: 14px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.footer-content {
+    column-count: 4;
+}
+
+.my-icon {
+    font-size: 14px !important;
+}
+
+
+
+/* Categories.html */
+
+.fruit-bg{
+    background-image: url(../images/assortment-citrus-fruits.png);
+    height: 400px;
+}
+

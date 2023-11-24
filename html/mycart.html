@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - eCommerce</title>
+
+    <!-- Font -->
+    <link rel="stylesheet" href="asset/font/stylesheet.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" href="asset/css/slick.css">
+
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="asset/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- media css -->
+    <link rel="stylesheet" href="asset/css/media.css">
+
+
+</head>
+
+<body>
+
+    <!-- Nav start-->
+    <div class="container-fluid bg-success-subtle ">
+        <div class="container">
+            <div class="navtop d-flex flex-wrap justify-content-between  align-items-center py-1  ">
+                <span> Super Value Deals - Save more with
+                    coupons</span>
+                <select name="Language" id="">
+                    <option class="bg-light " value="">English</option>
+                    <option class="bg-light" value="">German</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- Nav end -->
+
+    <!-- Header start -->
+    <header class="border-bottom ">
+        <div class="container">
+            <div class="py-3">
+                <nav class="navbar navbar-expand-lg  d-flex flex-wrap align-items-center">
+                    <div class="col-lg-2">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="asset/images/freshcart-logo.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="searchBar d-flex  align-items-center me-1 fs-14 position-relative ">
+                            <input id="searchQueryInput" type="text" name="searchQueryInput"
+                                placeholder="Search for Product" class="rounded border w-100 p-2 pe-0">
+                            <a href="javascript:void(0);"><button id="searchQuerySubmit" type="submit"
+                                    class="position-absolute pe-2 " name="searchQuerySubmit">
+                                    <i class="bi bi-search text-dark"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <button class="btn btn-outline-light btn-lg  text-dark border fs-14 location-home"
+                            data-bs-toggle="modal" data-bs-target="#locate"><i
+                                class="bi bi-geo-alt me-1"></i>Location</button>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="nav-menu d-flex flex-wrap justify-content-end">
+                            <a href="mycart.html" class="text-dark"><i
+                                    class="bi bi-heart fs-6 me-4 position-relative"></i></a>
+                            <a href="javascript:void(0);" class="text-dark user-btn"><i
+                                    class="bi bi-person fs-6 me-4"></i></a>
+                            <a href="checkout.html" class="text-dark"><i
+                                    class="bi bi-bag fs-6 position-relative me-2 "></i></a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler fs-14" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collaps"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse pt-3 fs-14" id="navbar-collaps">
+                        <ul class="navbar-nav">
+                            <button class="btn btn-success rounded py-2 fs-14 me-2 "><i class="bi bi-grid me-2"></i>All
+                                Department</button>
+                            <li class="nav-item"><a class="nav-link fw-semibold pe-2" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link fw-semibold position-relative pe-3"
+                                    href="categories.html">Shop</a>
+                            </li>
+                            <li class="nav-item pages"><a class="nav-link  fw-semibold   position-relative pe-3"
+                                    href="javascript:void(0);">Pages <span class="fw-semibold fs-10"><i
+                                            class="bi bi-chevron-down ms-1"></i></span></a>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link  fw-semibold  position-relative pe-3"
+                                    href="mycart.html">My Cart</a></li>
+                            <li class="nav-item"><a class="nav-link me-2  fw-semibold  position-relative pe-3"
+                                    href="checkout.html">Check out</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- dropDowns start -->
+    <div id="drp-down">
+        <div class="pages-drp border rounded m-0">
+            <ul class="text-decoration-none p-0 fs-14 px-2 py-2 m-0" type="none">
+                <li class="px-3 pb-1 rounded drd"><a href="signin.html" class="text-decoration-none text-dark">Signin
+                        Page</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="../signup.html" class="text-decoration-none text-dark">Signup
+                        Page</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="categories.html"
+                        class="text-decoration-none text-dark">Product Page</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="mycart.html" class="text-decoration-none text-dark">My Cart
+                        Page</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="checkout.html"
+                        class="text-decoration-none text-dark">Checkout Page</a></li>
+            </ul>
+        </div>
+        <div class="location-drp border  rounded m-0">
+            <ul class="text-decoration-none p-0 fs-14 px-2 py-2 m-0" type="none">
+                <li class="px-3 pb-1 rounded drd"><a href="../signup.html" class="text-decoration-none text-dark">Sign
+                        out</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="signin.html" class="text-decoration-none text-dark">New
+                        Signin</a></li>
+                <li class="px-3 py-1 rounded drd"><a href="../signup.html"
+                        class="text-decoration-none text-dark">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- dropdown end -->
+
+    <!-- modal start -->
+
+    <div class="modal fade" id="locate" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">New Address<p class="fs-14 text-muted m-0 ">
+                            Add new shipping address for your order delivery.</p>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form action="">
+                        <input type="text" class="form-control p-2 mb-2" placeholder="First Name" required>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="Last Name" required>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="Address Line1" required>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="Address Line2" required>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="City" required>
+                        <select name="" class="form-control p-2 mb-2" id="">
+                            <option value="">Gujarat</option>
+                            <option value="">Alaska</option>
+                            <option value="">England</option>
+                            <option value="">Abu Dhabi</option>
+                        </select>
+                        <select name="" class="form-control p-2 mb-2" id="">
+                            <option value="">India</option>
+                            <option value="">UK</option>
+                            <option value="">USA</option>
+                            <option value="">UAE</option>
+                        </select>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="ZIP Code" required>
+                        <input type="text" class="form-control p-2 mb-2" placeholder="Bussiness Name" required>
+                        <div class="form-check mt-1">
+                            <input type="checkbox" class="form-check-input" name="" id="">
+                            <label for="" class="form-check-label">
+                                Set as Default
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success " data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal end -->
+
+
+    <main>
+        <!-- My Cart Start -->
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="pb-1rounded fw-bold fs-1">Shop Cart</h2>
+                <p class="pb-3 text-muted">Shopping in 394230</p>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="alert alert-danger m-0 p-0 rounded-2 p-2 border-bottom mb-3 mt-4">
+                            <p class="m-0">
+                                You’ve got FREE delivery. Start <a href="checkout.html"
+                                    class="text-decoration-none text-dark fw-bold">Checkout Now!</a>
+                            </p>
+                        </div>
+                        <div class="cart-product border-top">
+                            <ul class="list-group list-group-flush pb-3">
+                                <li class="list-group-item border-bottom ">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <img src="asset/images/product-img-1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-cent">
+                                                <h6 class="fs-6 fw-bolder ">Haldiram's Sev Bhujia</h6>
+                                                <span class="text-muted fs-14">.98 / lb</span>
+                                                <div class="remove mt-3 ms-2">
+                                                    <a href="javascript:void(0);" class="text-decoration-none">
+                                                        <p class="text-muted fs-14"><i
+                                                                class="bi bi-trash me-2 text-success"></i>Remove</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <div class="counter d-flex flex-wrap justify-content-center ">
+                                                    <span class="down bg-dark-subtle  me-1 rounded py-2 px-3 "
+                                                        onClick='decreaseCount(event, this)'>-</span>
+                                                    <input type="text"
+                                                        class="bg-transparent rounded text-center fs-14 border-0 "
+                                                        value="1">
+                                                    <span class="up bg-dark-subtle  ms-1 rounded py-2  px-3 "
+                                                        onClick='increaseCount(event, this)'>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <span class="fs-6 fw-bold mt-res">$5.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-bottom ">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <img src="asset/images/product-img-2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-cent">
+                                                <h6 class="fs-6 fw-bolder ">Nutri Biscuit</h6>
+                                                <span class="text-muted fs-14">.98 / lb</span>
+                                                <div class="remove mt-3 ms-2">
+                                                    <a href="javascript:void(0);" class="text-decoration-none">
+                                                        <p class="text-muted fs-14"><i
+                                                                class="bi bi-trash me-2 text-success"></i>Remove</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <div class="counter d-flex flex-wrap justify-content-center ">
+                                                    <span class="down bg-dark-subtle  me-1 rounded py-2 px-3 "
+                                                        onClick='decreaseCount(event, this)'>-</span>
+                                                    <input type="text"
+                                                        class="bg-transparent rounded text-center fs-14 border-0 "
+                                                        value="1">
+                                                    <span class="up bg-dark-subtle  ms-1 rounded py-2  px-3 "
+                                                        onClick='increaseCount(event, this)'>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <span class="fs-6 fw-bold mt-res">$5.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-bottom ">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <img src="asset/images/product-img-3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-cent">
+                                                <h6 class="fs-6 fw-bolder ">Chocolate</h6>
+                                                <span class="text-muted fs-14">.98 / lb</span>
+                                                <div class="remove mt-3 ms-2">
+                                                    <a href="javascript:void(0);" class="text-decoration-none">
+                                                        <p class="text-muted fs-14"><i
+                                                                class="bi bi-trash me-2 text-success"></i>Remove</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <div class="counter d-flex flex-wrap justify-content-center ">
+                                                    <span class="down bg-dark-subtle  me-1 rounded py-2 px-3 "
+                                                        onClick='decreaseCount(event, this)'>-</span>
+                                                    <input type="text"
+                                                        class="bg-transparent rounded text-center fs-14 border-0 "
+                                                        value="1">
+                                                    <span class="up bg-dark-subtle  ms-1 rounded py-2  px-3 "
+                                                        onClick='increaseCount(event, this)'>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <span class="fs-6 fw-bold mt-res">$5.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-bottom ">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <img src="asset/images/product-img-4.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-cent">
+                                                <h6 class="fs-6 fw-bolder ">Lays Chips</h6>
+                                                <span class="text-muted fs-14">.98 / lb</span>
+                                                <div class="remove mt-3 ms-2">
+                                                    <a href="javascript:void(0);" class="text-decoration-none">
+                                                        <p class="text-muted fs-14"><i
+                                                                class="bi bi-trash me-2 text-success"></i>Remove</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <div class="counter d-flex flex-wrap justify-content-center ">
+                                                    <span class="down bg-dark-subtle  me-1 rounded py-2 px-3 "
+                                                        onClick='decreaseCount(event, this)'>-</span>
+                                                    <input type="text"
+                                                        class="bg-transparent rounded text-center fs-14 border-0 "
+                                                        value="1">
+                                                    <span class="up bg-dark-subtle  ms-1 rounded py-2  px-3 "
+                                                        onClick='increaseCount(event, this)'>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <span class="fs-6 fw-bold mt-res">$5.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-bottom ">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <img src="asset/images/product-img-5.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-cent">
+                                                <h6 class="fs-6 fw-bolder ">Popcorn</h6>
+                                                <span class="text-muted fs-14">.98 / lb</span>
+                                                <div class="remove mt-3 ms-2">
+                                                    <a href="javascript:void(0);" class="text-decoration-none">
+                                                        <p class="text-muted fs-14"><i
+                                                                class="bi bi-trash me-2 text-success"></i>Remove</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <div class="counter d-flex flex-wrap justify-content-center ">
+                                                    <span class="down bg-dark-subtle  me-1 rounded py-2 px-3 "
+                                                        onClick='decreaseCount(event, this)'>-</span>
+                                                    <input type="text"
+                                                        class="bg-transparent rounded text-center fs-14 border-0 "
+                                                        value="1">
+                                                    <span class="up bg-dark-subtle  ms-1 rounded py-2  px-3 "
+                                                        onClick='increaseCount(event, this)'>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex flex-wrap justify-content-center ">
+                                                <span class="fs-6 fw-bold mt-res">$5.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="categories.html" class="text-decoration-none text-light"><button
+                                        class="btn btn-success rounded">Continue Shopping</button></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="categories.html" class="text-decoration-none text-light">
+                                    <button class="btn btn-dark rounded float-end ">Update Cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h6 class="fs-5 mb-3 fw-semibold">Summary</h6>
+                                <ul class="list-group list-group-flush border p-3 rounded">
+                                    <li
+                                        class="list-group-item d-flex justify-content-between align-items-center p-0 pb-2 ">
+                                        <div class="me-auto">
+                                            Item Subtotal
+                                        </div>
+                                        <span>$70.00</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex justify-content-between align-items-center p-0 pb-2 pt-2 ">
+                                        <div class="me-auto">
+                                            Service Fee
+                                        </div>
+                                        <span>$3.00</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex justify-content-between align-items-center p-0 fw-bolder pt-2 pb-2 ">
+                                        <div class="me-auto">
+                                            Subtotal
+                                        </div>
+                                        <span>$73.00</span>
+                                    </li>
+                                </ul>
+                                <a href="checkout.html" class="text-decoration-none text-light"><button
+                                        class="btn btn-success rounded w-100 mt-3 mb-3 text-start fw-bolder ">Go to
+                                        Checkout
+                                        <p class="float-end m-0">$73.00</p>
+                                    </button></a>
+                                <p class="fs-14">By placing your order, you agree to be bound by the Freshcart <a
+                                        href="" class="text-success text-decoration-none ">Terms of Service</a> & <a
+                                        class="text-success text-decoration-none " href="">Privacy Policy.</a></p>
+                                <h6 class="fs-5 mt-3 fw-semibold">Add Promo or Gift Card</h6>
+                                <form action="">
+                                    <label for="" class="form-label text-muted">Email address</label>
+                                    <input class="form-control" type="email" placeholder="Promo or Gift card">
+                                    <button class="btn btn-outline-dark rounded w-100 mt-2">Redeem</button>
+                                </form>
+                                <p class="fs-14 text-muted mt-2 fw-semibold">Terms & Conditions apply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Cart End -->
+
+    </main>
+
+    <!-- Footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row pb-3 ">
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Categories</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Vegetables & Fruits</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Breakfast & instant
+                                        food</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Bakery & Biscuits</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Atta, rice & dal</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Sauces & spreads</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Organic & gourmet</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Baby care</a></li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Cleaning essentials</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Personal care</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Dairy, bread & eggs</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Cold drinks &
+                                        juices</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Tea, coffee &
+                                        drinks</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Masala, oil & more</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Chicken, meat & fish</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Paan corner</a></li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1"> Pharma & wellness</a>
+                                </li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Home & office</a></li>
+                                <li class="nav-item"><a href="#!" class="nav-link p-0 pb-1">Pet care</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer-content mt-3">
+                        <h6 class="mb-3">Get to know us</h6>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Company</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">About</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Blog</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Help Center</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Our Value</a></p>
+                        <h6 class="mb-3 ">For Consumers</h6>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1" href="#home"
+                                targrt="">Payments</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Shipping</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="#services faqs" targrt="">Product Returns</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">FAQ</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Shop Checkout</a></p>
+                        <h6 class="mb-3">Become a Shopper</h6>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Shopper Opportunities</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Become a Shopper</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Earnings</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Ideas & Guides</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">New Retailers</a></p>
+                        <h6 class="mb-3">Freshcart programs</h6>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Freshcart programs</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Gift Cards</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Promos & Coupons</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Freshcart Ads</a></p>
+                        <p class="m-0 pb-1"><a class="text-reset text-decoration-none text-light p-0 pb-1"
+                                href="javascript:void(0);" targrt="">Careers</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3 border-top d-flex flex-wrap align-items-center border-bottom ">
+                <div class="col-lg-6">
+                    <ul class="d-flex text-decoration-none p-0 align-items-center mb-0" type="none">
+                        <li class=" text-decoration-none me-2 fw-semibold mb-0">Payment Partners</li>
+                        <li class="me-2 mb-0 "><img src="asset/images/amazonpay.svg" class="img-fluid" alt=""></li>
+                        <li class="me-2 mb-0 "><img src="asset/images/american-express.svg" class="img-fluid" alt="">
+                        </li>
+                        <li class="me-2 mb-0 "><img src="asset/images/mastercard.svg" class="img-fluid" alt=""></li>
+                        <li class="me-2 mb-0 "><img src="asset/images/paypal.svg" class="img-fluid" alt=""></li>
+                        <li class="mb-0 "><img src="asset/images/visa.svg" class="img-fluid" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="d-flex flex-wrap justify-content-end  text-decoration-none p-0 align-items-center mb-0 dwld"
+                        type="none">
+                        <li class=" text-decoration-none fw-semibold mb-0 me-2 ">Get deliveries with FreshCart</li>
+                        <li class="mb-0 me-2 "><img src="asset/images/appstore-btn.svg" class="img-fluid" alt=""></li>
+                        <li class="mb-0"><img src="asset/images/googleplay-btn.svg" class="img-fluid" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright pt-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="pt-1 pb-1">© 2023 FreshCart eCommerce Template. All rights reserved. Powered by <a
+                                href="javascript:void(0);" class="text-success text-decoration-none">kalpeshgupta</a>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-icon text-end">
+                            <span class="me-2">Follow us on</span>
+                            <a href="https://www.linkedin.com/in/kalpesh-gupta-a9a62b251" target="_blank"><i
+                                    class="bi bi-linkedin fs-6 text-dark me-2 "></i></a>
+                            <a href="https://www.facebook.com/kalpesh.gupta.7330?mibextid=ZbWKwL" target="_blank"><i
+                                    class="bi bi-facebook fs-6 text-dark me-2 "></i></a>
+                            <a href="https://instagram.com/im._.kalpesh?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                                    class="bi bi-instagram fs-6 text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- jQuery -->
+    <script src="asset/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!-- Slick slider -->
+    <script src="asset/js/slick.min.js"></script>
+
+    <!-- main js -->
+    <script src="asset/js/main.js"></script>
+
+</body>
+
+</html>

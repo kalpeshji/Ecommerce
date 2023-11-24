@@ -1,0 +1,102 @@
+@media(max-width:1400px) {
+
+    .dwld {
+        display: none !important;
+    }
+    .pages-drp{
+        left: 325px;
+    }
+    .location-drp{
+        right:0px;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .slider-content {
+        width: 100% !important;
+        background-color: transparent !important;
+    }
+    .pages-drp{
+        left: 315px;
+    }
+    .location-drp{
+        right:155px;
+    }
+}
+
+@media(max-width:992px) {
+    .wid-100 {
+        width: 100% !important;
+    }
+
+    .copyright .my-icon {
+        display: none !important;
+    }
+    .pages-drp{
+        left: 305px;
+    }
+    .location-drp{
+        right:100px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .nav-menu {
+        margin-top: 10px;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .text-cent {
+        text-align: center;
+    }
+
+    .mt-res {
+        margin-top: 10px;
+    }
+
+    .remove {
+        margin-top: 0px !important;
+    }
+    .pages-drp{
+        left: 33px;
+        top: 270px;
+    }
+    .location-drp{
+        right:42px;
+    }
+}
+
+@media(max-width:576px) {
+
+    .location-home {
+        display: none;
+    }
+
+    .searchBar {
+        margin-top: 10px;
+    }
+
+    .navtop select {
+        display: none;
+    }
+
+    .slider-content {
+        height: 700px;
+    }
+    .pages-drp{
+        left: 27px;
+        top: 310px;
+    }
+    .location-drp{
+        right:0px;
+    }
+}
